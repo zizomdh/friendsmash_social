@@ -168,7 +168,7 @@ function welcomePlayer(uid) {
     if (g_useFacebook) {
       FB.api('/me?fields=first_name', function(response) {
           var welcomeMsg = document.createElement('div');
-          var welcomeMsgStr = 'Welcome, ' + response.first_name + '!';
+          var welcomeMsgStr = 'Yo, ' + response.first_name + '!';
           welcomeMsg.innerHTML = welcomeMsgStr;
           welcomeMsg.id = 'welcome_msg';
           welcomeMsgContainer.appendChild(welcomeMsg);
@@ -248,7 +248,7 @@ function welcomePlayer(uid) {
     
 
     var welcomeSubMsg = document.createElement('div');
-    welcomeSubMsg.innerHTML = 'Let\'s smash some friends!';
+    welcomeSubMsg.innerHTML = 'Let\'s smash!!!!';
     welcomeSubMsg.id = 'welcome_submsg';
     welcomeMsgContainer.appendChild(welcomeSubMsg);
   }
@@ -361,7 +361,7 @@ function sendChallenge() {
   if (gScore) {
     FB.ui({method: 'apprequests',
       title: 'Friend Smash Challenge!',
-      message: 'I just smashed ' + gScore + ' friends! Can you beat it?',
+      message: 'I just smashed ' + gScore + ' friends! IM THE GREATEST!',
       data: challengeData
     }, fbCallback);
   }
